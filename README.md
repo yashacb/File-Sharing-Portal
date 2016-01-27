@@ -11,5 +11,5 @@ files . It also checks the integrity of the uploaded zip files ( using ubuntu's 
     his account .
 
 ## Usage
-To use this file sharing portal on a local area network , cpoy all the files into the server's root . The server should also 
+To use this file sharing portal on a local area network , copy all the files into the server's root . The server should also 
 have a mysql database with the username and password mentioned in index.php or login.php , and also an id column .
