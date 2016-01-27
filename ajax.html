@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>Ajax</title>
+		<script type="text/javascript">
+			function getLink(str)
+			{
+				if(str.length == 0)
+				{
+					document.getElementById("ajax_text").innerHTML = "" ;
+					return ;
+				}
+				else
+				{
+					var xmlhttp = new XMLHttpRequest() ;
+					xmlhttp.onreadystatechange = function()
+					{
+						if(xmlhttp.readyState == 4 && xmlhttp.status == 200)
+						{
+							document.getElementById("link").innerHTML = xmlhttp.responseText;
+						}
+					};
+					xmlhttp.open("POST" , "ajax_test.php" , "true") ;
+					xmlhttp.setRequestHeader("Content-type" , "application/x-www-form-urlencoded") ;
+					xmlhttp.send("link="+str) ;
+				}
+			}
+			function clear()
+			{
+				var input = document.getElementById("ajax_text") ;
+				input.innerHTML = " " ;
+			}
+		</script>
+	</head>
+
+	<body>
+		Enter Link : <form><input type = "url" id = "ajax_text" onkeyup="getLink(this.value)" ><input type = "reset" ></form>
+		<div id = "link" >
+			
+		</div>
+	</body>
+
+</html>

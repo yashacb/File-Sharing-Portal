@@ -1,0 +1,197 @@
+body
+	{
+		font-family: "Segoe UI",Arial,sans-serif !important;
+		width:auto;
+		max-width: 100%;
+		min-width: 110em;
+		min-height: 50em;
+		background: #FFFFFF;
+		margin-bottom: 5%;
+	}
+	a
+	{
+		 
+		text-decoration: none;
+	}
+	#header
+	{
+		resize:horizontal;
+		background-color:  #3A5795;
+		max-width: 100%;
+		min-width: 60%;
+		min-height: 7em;
+		margin-top: -0.5%;	
+	}
+	#title
+	{
+		resize:horizontal;
+		width:35%;
+		margin-top: 0.5%;
+		margin-left: 2%;
+		line-height: 100%;
+		text-align: center;
+		color: #FFFFFF;
+		float: left;
+	}
+	#search
+	{
+		float:left;
+		width: 30%;
+		height: 15%;
+		resize:horizontal;
+		margin-top: 2%
+	}
+	#menu
+	{
+		width:35%;
+		height: 10%;
+		resize:horizontal;
+		background-color: #3A5795;
+		margin-top: -2.5%;
+		margin-right: 4%;
+		float:right;
+	}
+	#menu ul{
+        padding: 0;
+        list-style: none;
+    }
+    #menu ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    #menu ul li a{
+        display: block;
+        padding: 8px 25px;
+        color:  #FFFFFF;
+        text-decoration: none;
+    }
+    #menu ul li a:hover{
+        color: #fff;
+        background: #08088A;
+    }
+    #menu ul li ul.dropdown{
+        min-width: 130px; /* Set width of the dropdown */
+        background: #3A5795;
+        display: none;
+        position: absolute;
+        color:   #FFFFFF;
+        z-index: 999;
+        left: 0;
+    }
+    #menu ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    #menu ul li ul.dropdown li{
+        display: block;
+    }
+    .button
+    {
+    	box-shadow: 0px 0px 0px 2px #9fb4f2;
+		background:linear-gradient(to bottom, #3A5795 5%, #476e9e 100%);
+		background-color:#3A5795;
+		border-radius:10px;
+		border:1px solid #4e6096;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #283966;
+    }
+     #search_button
+    {
+    	width:15%;
+    	height:2em;
+    }
+    .button:hover
+    {
+    	background:linear-gradient(to bottom, #476e9e 5%, #3A5795 100%);
+		background-color:#476e9e;
+    }
+    input[type=search]
+	{
+		border:2px solid #456879;
+		border-radius:10em;
+		width: 40%;
+		position: relative;
+		text-align: center;
+		outline: none;
+	}
+	.searchbox
+	{
+		height: 2.5em;
+	}
+	#current
+	{
+		background:  #08088A;
+	}
+	#myuploads
+	{
+		width:60%;
+		height: auto;
+		margin-left: 20%;
+		margin-top: 5%;
+	}
+	table
+	{
+		width:100%;
+		height: auto;
+		margin-left:10%;
+		border-top:1px solid #e5eff8;
+		border-right:1px solid #e5eff8; 
+		border-collapse: collapse;
+	}
+	td
+	{
+		height: 2em;
+		color:#678197;
+		border-bottom:1px solid #e5eff8;
+		border-left:1px solid #e5eff8;
+		padding:.3em 1em;
+	}
+	button
+	{
+		box-shadow: 0px 0px 0px 2px #9fb4f2;
+		background:linear-gradient(to bottom, #3A5795 5%, #476e9e 100%);
+		background-color:#3A5795;
+		border-radius:10em;
+		border:1px solid #4e6096;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #283966;
+	}
+	button:hover
+	{
+		background:linear-gradient(to bottom, #476e9e 5%, #3A5795 100%);
+		background-color:#476e9e;
+	}
+	#status
+	{
+		margin-left: 10%;
+		margin-top: 5%;
+	}
+	pre
+	{
+		font-size: 150%;
+	}
+	fieldset
+	{
+		width:60%;
+		height: auto;
+		margin-top: 5%;
+		margin-left: 20%;
+		padding-bottom: 2%;
+		padding-right: 10%;
+	}
+	input[type="password"]
+	{
+		border:2px solid #456879;
+		border-radius:10em;
+		width: 70%;
+		position: relative;
+		text-align: center;
+		outline: none;
+	}
